@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Github]()
--   Live Site URL: [Github pages]()
+-   Solution URL: [Github](https://github.com/Kshitiz-Karki/frontendmentor_faq-accordion-main)
+-   Live Site URL: [Github pages](https://kshitiz-karki.github.io/frontendmentor_faq-accordion-main/)
 
 ## My process
 
