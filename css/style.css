@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../assets/images/background-pattern-desktop.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Work Sans', monospace, sans-serif;
+  background-color: hsl(275, 100%, 97%);
+  font-size: 1rem;
+}
+
+article {
+  padding: 4rem;
+  width: 50%;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.accordion-content {
+  color: hsl(292, 16%, 49%);
+  padding-top: 1.5rem;
+  display: none;
+}
+
+.heading {
+  display: flex;
+}
+
+.accordion-summary {
+  font-weight: 600;
+/* list-style: none; */
+  display: flex;
+  padding-top: 3rem;
+  justify-content: space-between;
+  /* cursor: pointer; */
+}
+
+h1 {
+  font-size: 3.75rem;
+  margin-left: 1.25rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a,
+li a:visited {
+  text-decoration: none;
+  color: hsl(292, 42%, 14%);
+}
+
+li a:hover {
+  color: rgb(177, 35, 177);
+}
+
+hr {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    background-image: url('../assets/images/background-pattern-mobile.svg');
+  }
+  article {
+    width: 85%;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+  }
+  .accordion-content {
+    padding-top: 1rem;
+  }
+  .accordion-summary {
+    padding-top: 1rem;
+  }
+  hr {
+    margin-top: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+}

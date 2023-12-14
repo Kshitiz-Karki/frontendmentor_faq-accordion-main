@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; padding-top: 1rem;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <script src="app.js" type="text/javascript"></script>
+  
+  <article>
+    <section class="heading">
+      <img src="assets/images/icon-star.svg" alt="">
+      <h1>FAQs</h1>
+    </section>
+
+    <ul>
+      <li>
+        <a 
+          href="#accordion-content-id__1" 
+          onclick="changeDisplay('accordion-content-id__1', 'plus-icon__1', 'minus-icon__1')" 
+          class="accordion-summary"
+        >
+          <span>What is Frontend Mentor, and how will it help me?</span>
+          <span style="display:inline;" id="plus-icon__1"><img src="assets/images/icon-plus.svg"></span>
+          <span style="display:none;" id="minus-icon__1"><img src="assets/images/icon-minus.svg" ></span>
+        </a>
+        <p class="accordion-content" id="accordion-content-id__1">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
+      </li>
+      <hr>
+
+      <li>
+        <a 
+          href="#accordion-content-id__2" 
+          onclick="changeDisplay('accordion-content-id__2', 'plus-icon__2', 'minus-icon__2')" 
+          class="accordion-summary"
+        >
+          <span>Is Frontend Mentor free?</span>
+          <span style="display:inline;" id="plus-icon__2"><img src="assets/images/icon-plus.svg"></span>
+          <span style="display:none;" id="minus-icon__2"><img src="assets/images/icon-minus.svg"></span>
+        </a>
+        <p class="accordion-content" id="accordion-content-id__2">Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.</p>
+      </li>
+      <hr>
+
+      <li>
+        <a 
+          href="#accordion-content-id__3" 
+          onclick="changeDisplay('accordion-content-id__3', 'plus-icon__3', 'minus-icon__3')"
+          class="accordion-summary"
+        >
+          <span>Can I use Frontend Mentor projects in my portfolio?</span>
+          <span style="display:inline;" id="plus-icon__3"><img src="assets/images/icon-plus.svg"></span>
+          <span style="display:none;" id="minus-icon__3"><img src="assets/images/icon-minus.svg"></span>
+        </a>
+        <p class="accordion-content" id="accordion-content-id__3">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!</p>
+      </li>
+      <hr>
+
+      <li>
+        <a 
+          href="#accordion-content-id__4" 
+          onclick="changeDisplay('accordion-content-id__4', 'plus-icon__4', 'minus-icon__4')"
+          class="accordion-summary"
+        >
+          <span>How can I get help if I'm stuck on a challenge?</span>
+          <span style="display:inline;" id="plus-icon__4"><img src="assets/images/icon-plus.svg"></span>
+          <span style="display:none;" id="minus-icon__4"><img src="assets/images/icon-minus.svg"></span>
+        </a>
+        <p class="accordion-content" id="accordion-content-id__4">The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.</p>
+      </li>
+    </ul>
+    </article>
+    <!-- Alternately, <details> can also be used instead of <ul> in the above-->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kshitiz Karki</a>.
+  </div>
+</body>
+</html>
